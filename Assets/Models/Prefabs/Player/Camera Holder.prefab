@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 7285437554772394811}
   - component: {fileID: 4711426572988981789}
   - component: {fileID: 4136685484361191306}
+  - component: {fileID: 4741406119095276889}
   m_Layer: 0
   m_Name: Player Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -137,6 +138,22 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &4741406119095276889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4621395368651874738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7411773c2e5ba44b888d01d29c3bd44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInteractableCamera
+  _interactRange: 1
+  _interactLayer:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!1 &4904166006747642533
 GameObject:
   m_ObjectHideFlags: 0
