@@ -5,11 +5,13 @@ using UnityEngine.Events;
 public class InteractableObject : MonoBehaviour, IInteractable
 {
     [SerializeField] private GameObject _textObject;
+    [SerializeField] private InventoryItem _inventoryItem;
+    [SerializeField] private InventoryItem _requireItem;
 
     private Highlightable _highlighter;
 
     public UnityEvent OnInteractPressed;
-    
+
     private void Awake()
     {
         _highlighter = GetComponent<Highlightable>();
@@ -22,8 +24,16 @@ public class InteractableObject : MonoBehaviour, IInteractable
         SetTextActive(true);
     }
 
-    public void OnInteractPress()
+    public void OnInteractPress(PlayerInventory playerInventory)
     {
+        if (_requireItem != InventoryItem.None
+            && !playerInventory.HasItem(_requireItem))
+        {
+            return;
+        }
+
+        playerInventory.AddItem(_inventoryItem);
+
         OnInteractPressed?.Invoke();
     }
 
@@ -35,6 +45,8 @@ public class InteractableObject : MonoBehaviour, IInteractable
 
     private void SetTextActive(bool active)
     {
+        if (!_textObject) return;
+
         _textObject?.SetActive(active);
     }
 }

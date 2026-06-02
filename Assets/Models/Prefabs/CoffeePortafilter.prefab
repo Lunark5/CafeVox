@@ -197,9 +197,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c4e4974764fa8d3488fb304d082b59cd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1434174630973305462}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c4e4974764fa8d3488fb304d082b59cd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3909353649959687285}
   m_SourcePrefab: {fileID: 100100000, guid: c4e4974764fa8d3488fb304d082b59cd, type: 3}
 --- !u!1 &2363140813831346361 stripped
 GameObject:
@@ -310,24 +307,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableObject
   _textObject: {fileID: 2894722676088194351}
+  _inventoryItem: 2
   OnInteractPressed:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1434174630973305462}
         m_TargetAssemblyTypeName: Objects.InteractSwitch, Assembly-CSharp
         m_MethodName: Switch
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 3909353649959687285}
-        m_TargetAssemblyTypeName: GivePlayerItem, Assembly-CSharp
-        m_MethodName: GiveItemToPlayer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -350,19 +336,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Objects.InteractSwitch
   _enableObject: {fileID: 0}
---- !u!114 &3909353649959687285
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2363140813831346361}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be92350519304cd4933325f9f144b0c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GivePlayerItem
-  _inventoryItem: 0
 --- !u!4 &3134576397127074307 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c4e4974764fa8d3488fb304d082b59cd, type: 3}

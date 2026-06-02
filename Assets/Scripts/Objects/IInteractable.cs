@@ -2,7 +2,7 @@ public interface IInteractable
 {
     void OnInteractEnter();
 
-    void OnInteractPress();
+    void OnInteractPress(PlayerInventory playerInventory);
     
     void OnInteractExit();
 }

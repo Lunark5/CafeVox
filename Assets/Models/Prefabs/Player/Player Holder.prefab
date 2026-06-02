@@ -42,6 +42,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4235281237913876634}
     m_Modifications:
+    - target: {fileID: 5763216838571778995, guid: de533c1d902ab624fbc4d7ef7724cc82, type: 3}
+      propertyPath: _playerInventory
+      value: 
+      objectReference: {fileID: 1033883256169703525}
     - target: {fileID: 6786838992666135884, guid: de533c1d902ab624fbc4d7ef7724cc82, type: 3}
       propertyPath: m_Name
       value: Player Canvas
@@ -157,6 +161,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee09ca3285a422340aeef4739684f821, type: 3}
+--- !u!114 &1033883256169703525 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1989156294673130606, guid: ee09ca3285a422340aeef4739684f821, type: 3}
+  m_PrefabInstance: {fileID: 1568361302676556811}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddb9c6ebc87c40458a8cc0502d92d65a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInventory
 --- !u!4 &1987597719009133593 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1033204289103448082, guid: ee09ca3285a422340aeef4739684f821, type: 3}
@@ -215,6 +230,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4741406119095276889, guid: c538dd8b98abcb84c8b549893d32aeae, type: 3}
+      propertyPath: _playerInventory
+      value: 
+      objectReference: {fileID: 1033883256169703525}
     - target: {fileID: 4904166006747642533, guid: c538dd8b98abcb84c8b549893d32aeae, type: 3}
       propertyPath: m_Name
       value: Camera Holder
