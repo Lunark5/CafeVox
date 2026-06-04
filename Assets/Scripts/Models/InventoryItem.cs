@@ -2,5 +2,6 @@ public enum InventoryItem
 {
     None,
     CurrentItem,
-    Portafilter
+    Portafilter,
+    Coffee
 }
