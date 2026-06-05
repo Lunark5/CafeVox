@@ -157,7 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbbb77f4af6b42a7a81b98f80e6d60b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Highlightable
-  _highlightedColor: {r: 0, g: 0, b: 0, a: 0}
+  _highlightedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!114 &6818119990082191631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,6 +172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InteractableObject
   _textObject: {fileID: 4918854171399595550}
   _inventoryItem: 0
+  _requireItem: 0
   OnInteractPressed:
     m_PersistentCalls:
       m_Calls:
