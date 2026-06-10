@@ -101,6 +101,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f342ae6accb1f144a2344bb65661674, type: 3}
+--- !u!1 &2950000883258022897 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3272961041890272420, guid: 8f342ae6accb1f144a2344bb65661674, type: 3}
+  m_PrefabInstance: {fileID: 404029387690819413}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &6577405485118104388 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6835555929430858769, guid: 8f342ae6accb1f144a2344bb65661674, type: 3}
@@ -291,7 +296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c8913a85a887e9469388d2ee30697b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableObject
-  _textObject: {fileID: 0}
+  _textObject: {fileID: 2950000883258022897}
   _inventoryItem: 0
   _requireItem: 0
   OnInteractPressed:
